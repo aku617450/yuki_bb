@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body class="min-vh-100 d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mt-4 mb-4">Asynchronous bulletin board</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <form class="js-form">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input name="title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="title">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+            <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="content"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary js-create">Send</button>
+          <button type="button" class="btn btn-primary js-update d-none">Update</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Title</th>
+              <th scope="col">Content</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
